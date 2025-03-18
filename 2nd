@@ -1,0 +1,45 @@
+2)Develop and demonstrate a XHTML file includes JavaScript for the for the following problems: A)Input : A number n obtained using prompt Output: The first n Fibonacci numbers
+<html>
+<head>
+<title>FIBONACCI SERIES</title>
+<script type ="text/Javascript" language="Javascript">
+var m= prompt("enter a number:"," ");
+var fib="\n0\n1";
+var fib1=0, fib2=1,fib3, i=2;
+while(i<m)
+{
+fib3=fib1+fib2;
+fib1=fib2;
+fib2=fib3;
+i++;
+fib=fib+"\n"+fib3;
+}
+alert (" fibonacci number are\n"+fib);
+</script>
+</head>
+<body>
+</body>
+</html>
+
+
+b) Input: A numbers n obtained using prompt Output: A table of numbers from 1 to n their squares using alert.
+
+<html>
+<title>SQUARE OF A NUMBER</title>
+<body>
+<Script type ="text/Javascript">
+var num = prompt ("enter a number:\n", " ");
+if (num>0 && num!=null)
+{
+m="number and its square are \n" ;
+for ( i=1 ;i<=num ;i++)
+{
+m = m+i+"_"+i*i+"\n";
+}
+alert (m)
+}
+else
+alert("no input given");
+</script >
+</body>
+</html>
